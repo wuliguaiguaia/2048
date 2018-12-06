@@ -12,8 +12,6 @@ window.onload = () => {
     }
   }
 
-
-
   new Game();
   document.onclick = () => {
     if (over.style.display === "block") {
