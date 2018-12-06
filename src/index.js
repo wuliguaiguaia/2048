@@ -11,12 +11,14 @@ window.onload = () => {
       window.location = url;
     }
   }
- 
-    
+
+
 
   new Game();
   document.onclick = () => {
-    over.style.display = 'none';
-    new Game();
+    if (over.style.display === "block") {
+      new Game();
+      over.style.display = 'none';
+    }
   }
 }
